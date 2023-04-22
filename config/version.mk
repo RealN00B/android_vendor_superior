@@ -16,7 +16,7 @@
 SUPERIOR_MOD_VERSION = Thirteen
 
 ifndef SUPERIOR_BUILD_TYPE
-    SUPERIOR_BUILD_TYPE := COMMUNITY
+    SUPERIOR_BUILD_TYPE := COMMUNITY-EXTENDED
 endif
 
 # Test Build Tag
@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
 
     endif
     ifneq ($(IS_OFFICIAL), true)
-       SUPERIOR_BUILD_TYPE := COMMUNITY
+       SUPERIOR_BUILD_TYPE := COMMUNITY-EXTENDED
        $(error Device is not official "$(CURRENT_DEVICE)")
     endif
 endif
